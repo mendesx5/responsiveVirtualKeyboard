@@ -47,67 +47,79 @@
         </div>
     </header>
 
-    <section id="Keyboard">
+    <section id="keyboard">
         <div class="home">
-            <h1>Este Teclado Virtual foi desenvolvido por Gabriel Mendes, como parte de seu repositorio para GitHub, acesse-o pelo link."
+            <h1>Este Teclado Virtual foi desenvolvido por Gabriel Mendes, como parte de seu repositorio para GitHub, acesse-o pelo link</h1>
+            <a href="https://github.com/mendesx5">
                 <span>GitHub</span>
-                <a href="https://github.com/mendesx5">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="32px" height="32px" fill="currentColor">
-                        <path fill="#755fb4" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/>
-                    </svg>
-                </a>
-            </h1>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="32px" height="32px" fill="currentColor">
+                    <path fill="#755fb4" d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/>
+                </svg>
+            </a>
         </div>
-        <div class="Keyboard-desktop">
+        <div class="text-section">
+            <textarea id="output"></textarea>
+            <button id="clear-button">Clear</button>
+        </div>
+        <div class="keyboard-desktop">
             <div class="row">
-                <button class="key">1</button>
-                <button class="key">2</button>
-                <button class="key">3</button>
-                <button class="key">4</button>
-                <button class="key">5</button>
-                <button class="key">6</button>
-                <button class="key">7</button>
-                <button class="key">8</button>
-                <button class="key">9</button>
-                <button class="key">0</button>
+                <button class="key" data-key="key-1">1</button>
+                <button class="key" data-key="key-2">2</button>
+                <button class="key" data-key="key-3">3</button>
+                <button class="key" data-key="key-4">4</button>
+                <button class="key" data-key="key-5">5</button>
+                <button class="key" data-key="key-6">6</button>
+                <button class="key" data-key="key-7">7</button>
+                <button class="key" data-key="key-8">8</button>
+                <button class="key" data-key="key-9">9</button>
+                <button class="key" data-key="key-0">0</button>
             </div>
             <div class="row">
-                <button class="key">Q</button>
-                <button class="key">W</button>
-                <button class="key">E</button>
-                <button class="key">R</button>
-                <button class="key">T</button>
-                <button class="key">Y</button>
-                <button class="key">U</button>
-                <button class="key">I</button>
-                <button class="key">O</button>
-                <button class="key">P</button>
+                <button class="key" data-key="key-q">q</button>
+                <button class="key" data-key="key-w">w</button>
+                <button class="key" data-key="key-e">e</button>
+                <button class="key" data-key="key-r">r</button>
+                <button class="key" data-key="key-t">t</button>
+                <button class="key" data-key="key-y">y</button>
+                <button class="key" data-key="key-u">u</button>
+                <button class="key" data-key="key-i">i</button>
+                <button class="key" data-key="key-o">o</button>
+                <button class="key" data-key="key-p">p</button>
+                <button class="backspace" id="key-backspace" data-key="key-back">&#9003</button>
             </div>
             <div class="row">
-                <button class="key">A</button>
-                <button class="key">S</button>
-                <button class="key">D</button>
-                <button class="key">F</button>
-                <button class="key">G</button>
-                <button class="key">H</button>
-                <button class="key">J</button>
-                <button class="key">K</button>
-                <button class="key">L</button>
-                <button class="key">Ç</button>
+                <button class="capslock" id="key-capslock" data-key="key-">&#8682</button>
+                <button class="key" data-key="key-a">a</button>
+                <button class="key" data-key="key-s">s</button>
+                <button class="key" data-key="key-d">d</button>
+                <button class="key" data-key="key-f">f</button>
+                <button class="key" data-key="key-g">g</button>
+                <button class="key" data-key="key-h">h</button>
+                <button class="key" data-key="key-j">j</button>
+                <button class="key" data-key="key-k">k</button>
+                <button class="key" data-key="key-l">l</button>
+                <button class="key" data-key="key-ç">ç</button>
+                <button class="enter" id="key-enter" data-key="key-enter">&#9166</button>
             </div>
             <div class="row">
-                <button class="key">Z</button>
-                <button class="key">X</button>
-                <button class="key">C</button>
-                <button class="key">V</button>
-                <button class="key">B</button>
-                <button class="key">N</button>
-                <button class="key">M</button>
+                <button class="key" data-key="key-exclamation">!</button>
+                <button class="key" data-key="key-z">z</button>
+                <button class="key" data-key="key-x">x</button>
+                <button class="key" data-key="key-c">c</button>
+                <button class="key" data-key="key-v">v</button>
+                <button class="key" data-key="key-b">b</button>
+                <button class="key" data-key="key-n">n</button>
+                <button class="key" data-key="key-m">m</button>
+                <button class="key" data-key="key-comma">,</button>
+                <button class="key" data-key="key-point">.</button>
+                <button class="key" data-key="key-interrogation">?</button>
             </div>
             <div class="row">
-                <button class="key" id="space">space</button>
+                <button class="key" id="key-space" data-key="key-space">⎵</button>
             </div>
         </div>
     </section>
+
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

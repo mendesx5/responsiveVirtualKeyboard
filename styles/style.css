@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #111;
 }
 
 header {
@@ -46,18 +47,118 @@ header .grid-layout nav ul a li #midia:hover {
     padding: 4px;
 }
 
-#kayboard {
+#keyboard {
     margin: 0;
     padding: 0;
-    top: 80px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #keyboard .home h1 {
     font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#keyboard .keyboard-desktop .row .key {
+#keyboard .home a {
+    padding: 0;
     margin: 0;
-    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #986dff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    transition: all .5s ease;
+    background: none;
+}
+
+#keyboard .home a:hover {
+    transform: translateY(10px);
+}
+
+#keyboard .text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+#keyboard .text-section textarea {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    width: 50%;
+    height: 150px;
+    resize: none;
+    padding: .5rem;
+    outline: none;
+    border: 2px #986dff solid;
+    font-size: 1.2rem;
+}
+
+#keyboard .text-section #clear-button {
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    font-size: 1rem;
+    background: #151515;
+    border: 2px #986dff solid;
+    border-radius: 5px;
+    transition: all .05s ease;
+    margin: 10px;
+}
+
+#keyboard .text-section #clear-button:active {
+    background: #986dff;
+}
+
+#keyboard .keyboard-desktop {
+    margin: 30px 0;
+}
+
+#keyboard .keyboard-desktop .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 7px;
+}
+
+#keyboard .keyboard-desktop .row button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #151515;
+    border: 2px #986dff solid;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all .05s ease;
+}
+
+#keyboard .keyboard-desktop .row button:active {
     background-color: #986dff;
+}
+
+#keyboard .keyboard-desktop .row #space {
+    width: 340px;
+}
+
+#keyboard .keyboard-desktop .row .capslock {
+    text-transform: uppercase;
 }
