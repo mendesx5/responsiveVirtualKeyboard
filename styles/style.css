@@ -83,9 +83,6 @@ header .grid-layout nav ul a li #midia:hover {
     background: none;
 }
 
-#keyboard .home a:hover {
-    transform: translateY(10px);
-}
 
 #keyboard .text-section {
     display: flex;
@@ -155,8 +152,16 @@ header .grid-layout nav ul a li #midia:hover {
     background-color: #986dff;
 }
 
-#keyboard .keyboard-desktop .row #space {
+#keyboard .keyboard-desktop .row #key-space {
     width: 340px;
+}
+
+#keyboard .keyboard-desktop .row #key-backspace {
+    width: 100px;
+}
+
+#keyboard .keyboard-desktop .row #key-capslock {
+    width: 80px;
 }
 
 #keyboard .keyboard-desktop .row .capslock {
